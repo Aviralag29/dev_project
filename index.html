@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
+  <!-- 
+  <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+  <script src="js/main.js"></script>
+  <title>CodeCraft</title>
+</head>
+
+<body>
+
+
+
+  <header>
+    <a href="#" class="logo">CodeCraft</a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="menu">
+      <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu();">About</a></li>
+      <li><a href="#services" onclick="toggleMenu();">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+    </ul>
+  </header>
+
+
+
+
+  <section class="banner" id="home">
+    <div class="text-banner">
+      <h3>Hello, We are CodeCraft</h3>
+      <h2>
+        <font style="color:#D61A3C">App</font> Developers
+      </h2>
+      <h4>We design and develop native android application</h4>
+      <a href="#work" class="btn">OUR WORK</a>
+    </div>
+  </section>
+
+
+
+
+  <section id="about">
+    <div class="container">
+      <div class="imgx"></div>
+      <div class="text-container">
+        <font style="color: #fff">
+          <h1>Native Android Development</h1>
+          <p>We have expertise in java based native android development and have an experience of over 1 year. Our apps
+            are robust and highly scalable with great UI/UX integration and performance.
+          </p>
+        </font>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="img"></div>
+      <div class="text-container">
+        <font style="color: #fff">
+          <h1>UI Design</h1>
+          <p>We make robust UI of android application which are achievable as well as user oriented. WE have expertise
+            in material UI, soft UI, neumorphism and are curretly learning glass morphism.
+          </p>
+        </font>
+
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+
+
+  <section class="services" id="services">
+    <div class="heading white">
+      <h1>Projects</h1>
+      <p>Some of our past projects</p>
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="images/litelo1.jpg" alt="" style="width: 300px;">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/litelo2.jpg" alt="" style="width: 300px;">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/byte1.jpg" alt="" style="width: 300px;">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/byte2.jpg" alt="" style="width: 300px;">
+        </div>
+
+      </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+
+  </section>
+
+
+
+
+
+
+
+
+  <section class="contact" id="contact">
+    <div class="heading white">
+      <h2>Contact Me</h2>
+      <p>Some questions about work. Here you are.</p>
+    </div>
+    <div class="content">
+      <div class="contactinfo">
+        <h3>Contact Informations</h3>
+        <div class="contactinfobox">
+          <div class="box">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>Vellore Institute of Technology<br>Vellore<br>Tamilnadu</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fas fa-phone"></i></div>
+            <div class="text">
+              <h3>Github</h3>
+              <p>Aviralag29</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div class="text">
+              <h3>Mail</h3>
+              <p>avirala368@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="formbox">
+        <form>
+          <h3>Message Me</h3>
+          <input type="text" name="" placeholder="Full Name">
+          <input type="email" name="" placeholder="Your email">
+          <textarea placeholder="Your message"></textarea>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="copyright">
+    Copyright 2021 © Aviralag29. All Rights Reserved
+  </div>
+
+
+
+  <script id="rendered-js">
+    var mySwiper = new Swiper('.swiper-container', {
+      loop: true,
+      speed: 1000,
+      autoplay: {
+        delay: 3000,
+      },
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 80,
+        depth: 200,
+        modifier: 1,
+        slideShadows: false,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    })
+  </script>
+
+</body>
+
+</html>

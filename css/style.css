@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 36px;
+  margin: 0 0 15px;
+}
+
+p {
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 15px 0;
+}
+
+
+div.site {
+  background-color: #f2f2f2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(210deg, #FB8E2A, #FDC154);
+}
+
+
+div.container {
+  background-color: #D61A3C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  box-shadow: 0 8px 16px rgba(black, .45);
+}
+
+div.img {
+  height: 300px;
+  width: 100%;
+  background: url("/images/pexels-leigh-patrick-339144.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+div.imgx {
+  height: 300px;
+  width: 100%;
+  background: url("/images/pexels-limon-das-1100447.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+div.text-container {
+  margin: 60px 45px 55px;
+}
+
+
+@media screen and (min-width: 768px) {
+ div.container {
+   flex-direction: row;
+    width: 100%;
+ }
+  
+  div.img {
+     height: 420px;
+     min-width: 360px;
+  }
+  
+  div.text-container {
+     margin: 0 60px;
+     max-width: 660px;
+  }
+}
+
+
+
+section {
+  padding: 100px;
+  background-color:#000;
+}
+/* Top Nav Bar Design*/
+header.sticky {
+  background: #000;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px; 
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s ease;
+}
+header.sticky .logo {
+  color: #fff;
+}
+header .logo {
+  color: #D61A3C;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;  
+}
+header ul {
+  position: relative;
+  display : flex;  
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header.sticky ul li a {
+  color: #fff;
+  font-weight: 500;
+}
+header ul li a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+}
+/*Banner design*/
+.banner {
+  position: relative;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 120%), url(../images/dark_liquid.jpg);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  jusitfy-content: space-between;
+  align-items: center;
+}
+.banner h2 {
+  font-size: 3em;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.5em;;
+}
+.banner h2 span {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.banner h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #fff;
+  margin-top :32px;
+}
+
+.banner h4{
+  font-size:1.2em;
+  font-weight:500;
+  color: #fff;
+  margin-top:4px;
+}
+/*Design of button*/
+.btn {
+  position: relative;
+  background: #D61A3C;
+  display: inline-block;
+  color: #fff;
+  margin-top: 54px;
+  padding: 14px 36px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  border-radius: 2px;
+}
+/*section design*/
+.heading.white {
+  color: #fff;
+}
+.heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.heading h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.contentbox {
+  padding-right: 30px;
+}
+.contentbox h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color:#fff;
+}
+.w50 {
+  min-width: 50%;
+}
+img {
+  max-width: 100%;
+  border-radius:24px;
+}
+/*Services section design*/
+.services {
+  background:black;
+}
+
+ 
+
+.services .white {
+  color: #fff;
+}
+.services .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.services .content .servicesbox {
+  padding: 40px 20px 10px 20px;
+  background: #222;
+  color: #fff;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s ease;
+  border-radius: 24px;
+}
+.services .content .servicesbox:hover {
+  background: #2196f3;
+} 
+.services .content .servicesbox .icon {
+  margin:10px auto 20px auto;
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+}
+.services .content .servicesbox .fa {
+  fill: #fff;
+  position: relative;
+  text-align: center;
+}
+.services .content .servicesbox h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.services .content .servicesbox p {
+  font-size: 15px;
+}
+/*work section design*/
+.work .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.work .content .workbox {
+  width: 50%;
+  padding: 20px;
+}
+.work .content .workbox img {
+  max-width: 100%;
+}
+/*testimonial design section */
+.testimonials {
+  background: #000000;
+}
+.testimonials .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.testimonials .content .testimonialbox {
+  max-width: calc(50%- 40px);
+  padding: 60px 40px;
+  margin: 20px;
+  border-radius: 12px;
+  background: #2196f3;
+}
+.testimonials .content .testimonialbox p {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+.testimonials .content .testimonialbox h3 {
+  margin-top: 40px;
+  text-align: end;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1em;
+}
+.testimonials .content .testimonialbox h3 span {
+  font-size: 14px;
+  font-weight: 400;
+}
+/*Form section design*/
+.contact {
+  background: #111;  
+}
+.formbox {
+  min-width: 60%;
+}
+.formbox form {
+  display: flex;
+  flex-direction :column;
+}
+.formbox form h3, .contactinfo h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.formbox form input, 
+.formbox form textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+  resize: none;
+}
+.formbox form textarea {
+  min-height: 200px;
+}
+.formbox form input:placeholder
+.formbox form textarea:placeholder {
+  color: #999;
+}
+.formbox form input[type="submit"] {
+  max-width: 100px;
+  border-radius:24px;
+  background: #2196f3;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.contactinfo {
+  min-height: 40%;
+}
+.contactinfobox {
+  position: relative;  
+}
+.contactinfobox .box {
+  position: relative;
+  padding: 20px;
+  display: flex;  
+}
+.contactinfobox .box .icon {
+  min-width: 40px;
+  padding-top: 4px;
+  color: #fff;
+  display: flex;
+  jusitfy-content: center;
+  align-items: flex-start;
+  font-size: 24px;
+}
+.contactinfobox .box .text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+}
+.contactinfobox .box .text h3 {
+  font-weight: 500;
+  color: #2196f3;
+  margin-bottom: 0;
+}
+/*Copyright section design*/
+.copyright {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+/*Responsive part*/
+
+@media (max-width: 991px) {
+  header, header.sticky {
+    padding: 20px 50px;
+    z-index: 10;
+  }
+  .menu {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width:100%;
+    heigh: 100vh;
+    background: #fff;
+    transition: 0.6s ease;
+    z-index: 9;
+    border-top: 1px solid rgba(0,0,0,0.2);
+  }
+  .menu.active {
+    left: 0;
+  }
+  header ul li a {
+    color: #111;
+    margin: 10px;
+    font-size: 24px;
+  }
+  .toggle:before {
+    content: "\2630";
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .toggle.active:before {
+    content: "\0002DF";
+    width: 20px;
+    height: 20px;
+    font-size: 50px;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    right: 50px;
+  }
+  header.sticky .toggle {
+    filter: invert(1);
+  }
+  header.sticky .toggle.active:before {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+  }
+  section {
+    pdding: 100px 50px;
+  }
+  .banner {
+    padding: 150px 50px;
+  }
+  .banner h2, .banner h3 {
+    font-size: 1em;
+  }
+  .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .heading h2 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .contentbox h3 {
+    font-size: 20px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .w50 {
+    margin-top: 20px;
+  }
+  .services .content .servicesbox {
+    height: 200px;
+  }
+  .work .content .workbox {
+    width: 100%;
+    padding: 10px;
+  }
+  .testimonials .content .testimonialbox {
+    max-width: calc(100% - 20px);
+    padding: 40px 20p;
+    margin: 10px;
+    background: #2196f3;
+  }
+  .testimonials .content .testimonialbox h3 {
+    margin-top: 20px;    
+  }
+  .contactinfo {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 600px){
+  header,
+  header.sticky {
+    padding: 20px 50px;
+  }
+  .banner {
+    padding: 150px 50px 100px;
+  }
+  section {
+    padding: 100px 20px;
+  }
+}
+
+
+
+
+.swiper-container {
+  width: 750px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+.swiper-slide{
+  width: 300px i !important;
+
+}
+
+
+
+
+
+
